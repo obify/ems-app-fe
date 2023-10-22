@@ -7,6 +7,10 @@ import { useNavigate } from 'react-router-dom';
 
 
 import { ThemeContext } from "../../context/ThemeContext";
+import Carousel from './Home/Carousel';
+import Aboutus from './AboutUs/Aboutus';
+import Services from './Services/Services';
+import UpcomingEvent from './UpcomingEvents/UpcomingEvent';
 const priceBlog = [
     {price:"10"},
     {price:"25"},
@@ -34,6 +38,10 @@ const LandingPage = () => {
   return (
     <div>
     <Header logoStyle={IMAGES.logo2}/>
+    < Carousel />
+    <Aboutus />
+    <Services />
+    <UpcomingEvent />
 
  
     </div>

@@ -1,7 +1,7 @@
 export const MenuListArray2 = [
     {
         title:"Home",
-        to: './contact-us',
+        to: './homee',
         // classChange:"sub-menu-down",
         // content :  [
         //     {
@@ -19,7 +19,7 @@ export const MenuListArray2 = [
         // ],
     },
     {
-        title:"Pages",
+        title:"Our Vision",
         classChange:"sub-menu-down",
         content : [
             {
@@ -84,7 +84,7 @@ export const MenuListArray2 = [
         ],
     },
     {
-        title:"Fundraiser",
+        title:"Services",
         classChange:"sub-menu-down",
         content : [
             {
@@ -102,7 +102,7 @@ export const MenuListArray2 = [
         ],
     },
     {
-        title:"Projects",
+        title:"Upcoming Events",
         classChange:"sub-menu-down",
         content : [
             {
@@ -124,7 +124,7 @@ export const MenuListArray2 = [
         ],
     },
     {
-        title:"Blog",
+        title:"Gallery",
         classChange:"sub-menu-down",
         content:[
             {
@@ -146,7 +146,7 @@ export const MenuListArray2 = [
         ],
     },
     {   
-        title: 'Contact Us',	
+        title: '',	
         to: './contact-us',
     },
 

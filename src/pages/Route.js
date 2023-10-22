@@ -33,6 +33,7 @@ import BlogList from "./BlogList";
 import BlogDetails from "./BlogDetails";
 import ContactUs from "./ContactUs";
 import LandingPage from "../components/ems/LandingPage";
+import Homee from "../components/ems/Home/Carousel"
 
 function Index() {
   return (
@@ -47,6 +48,7 @@ function Index() {
 		{/*Start our routes start*/}
 
 		 <Route path="/landingpage" exact element={<LandingPage />} />
+     <Route path="/homee" exact element={<Homee />} />
 
 		 	{/*Start our routes end*/}
         <Route path="/index-3" exact element={<Home3 />} />
