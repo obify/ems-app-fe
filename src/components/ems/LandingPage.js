@@ -11,39 +11,43 @@ import Carousel from './Home/Carousel';
 import Aboutus from './AboutUs/Aboutus';
 import Services from './Services/Services';
 import UpcomingEvent from './UpcomingEvents/UpcomingEvent';
+import Footer from './Footer/Footer';
+import Gallery from './Gallery/Gallery';
+
 const priceBlog = [
-    {price:"10"},
-    {price:"25"},
-    {price:"50"},
-    {price:"100"},
+  { price: "10" },
+  { price: "25" },
+  { price: "50" },
+  { price: "100" },
 ];
 const LandingPage = () => {
 
-     const { changeBackground, changePrimaryColor } = useContext(ThemeContext);
-	useEffect(() => {
-		changeBackground({ value: "data-typography-1", label: "data-typography-1" });
-		changePrimaryColor("color-skin-2");
-	}, []);
+  const { changeBackground, changePrimaryColor } = useContext(ThemeContext);
+  useEffect(() => {
+    changeBackground({ value: "data-typography-1", label: "data-typography-1" });
+    changePrimaryColor("color-skin-2");
+  }, []);
 
-    const [donateValue, setDonateValue] = useState(priceBlog[0].price);
-    function changeValue(price){
-        setDonateValue(price);
-    }
-    const nav = useNavigate();
-    const submitHandler = (e) => {
-        e.preventDefault();
-        nav("/contact-us");
-    };
+  const [donateValue, setDonateValue] = useState(priceBlog[0].price);
+  function changeValue(price) {
+    setDonateValue(price);
+  }
+  const nav = useNavigate();
+  const submitHandler = (e) => {
+    e.preventDefault();
+    nav("/contact-us");
+  };
 
   return (
     <div>
-    <Header logoStyle={IMAGES.logo2}/>
-    < Carousel />
-    <Aboutus />
-    <Services />
-    <UpcomingEvent />
+      <Header logoStyle={IMAGES.logo2} />
+      < Carousel />
+      <Aboutus />
+      <Services />
+      <Gallery />
+      <UpcomingEvent />
+      <Footer />
 
- 
     </div>
   )
 }
