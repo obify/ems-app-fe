@@ -16,7 +16,7 @@ const Header = ({onShowDonate, changeStyle, changeLogo}) => {
      nav("/");
  }
 
-    /* for sticky header */
+    /* for sticky header  */
 	const [headerFix, setheaderFix] = useState(false);
 	useEffect(() => {
 		window.addEventListener("scroll", () => {
