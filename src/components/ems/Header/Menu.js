@@ -102,7 +102,7 @@ export const MenuListArray2 = [
         ],
     },
     {
-        title:"Upcoming Events",
+        title:"Events",
         classChange:"sub-menu-down",
         content : [
             {
@@ -146,7 +146,7 @@ export const MenuListArray2 = [
         ],
     },
     {   
-        title: '',	
+        title: 'Contact',	
         to: './contact-us',
     },
 

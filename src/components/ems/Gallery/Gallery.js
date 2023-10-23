@@ -14,13 +14,13 @@ const Gallry = () => {
         setImages(nextImages);
     };
 
-    const handleSelectAllClick = () => {
-        const nextImages = images.map((image) => ({
-            ...image,
-            isSelected: !hasSelected,
-        }));
-        setImages(nextImages);
-    };
+    // const handleSelectAllClick = () => {
+    //     const nextImages = images.map((image) => ({
+    //         ...image,
+    //         isSelected: !hasSelected,
+    //     }));
+    //     setImages(nextImages);
+    // };
     return (
         <>
             <div>

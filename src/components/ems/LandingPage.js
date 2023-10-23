@@ -13,6 +13,8 @@ import Services from './Services/Services';
 import UpcomingEvent from './UpcomingEvents/UpcomingEvent';
 import Footer from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
+import CitySelect from './CitySelect/CitySelect';
+import ContactUs from './ContactUs/ContactUs';
 
 const priceBlog = [
   { price: "10" },
@@ -39,13 +41,15 @@ const LandingPage = () => {
   };
 
   return (
-    <div>
+    <div >
       <Header logoStyle={IMAGES.logo2} />
       < Carousel />
+      <CitySelect />
       <Aboutus />
       <Services />
       <Gallery />
       <UpcomingEvent />
+      <ContactUs />
       <Footer />
 
     </div>
