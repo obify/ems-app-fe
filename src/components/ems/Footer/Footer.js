@@ -36,15 +36,14 @@ const Footer = () => {
                             </div>
                             <div className="col-xl-2 col-lg-4 col-md-4 col-sm-6 " >
                                 <div className="widget widget_services">
-                                    <h4 className="widget-title">Resources</h4>
+                                    <h4 className="widget-title">Useful Link</h4>
                                     <div className="separator-2 bg-secondary m-b30"></div>
                                     <ul>
-                                        <li><Link to={"/how-it-works"}>How It Works</Link></li>
-                                        <li><Link to={"/ask-a-question"}>Ask A Question</Link></li>
-                                        <li><Link to={"/project-story"}>Project Story</Link></li>
-                                        <li><Link to={"/mission"}>Mission</Link></li>
-                                        <li><Link to={"/certificates"}>Certificates</Link></li>
-                                        <li><Link to={"/terms-and-condition"}>Terms And Condition</Link></li>
+                                        <li><a target='_blank' href="https://www.swadeshionline.in/">Swadeshi Jagran Manch</a></li>
+                                        <li><a target='_blank' href="https://www.joinswadeshi.com/">Join Swadeshi</a></li>
+                                        <li><a target='_blank' href="https://mysba.co.in/">MySba</a></li>
+                                        <li><a target='_blank' href="https://dbthengadi.in/">Aadarniya Dattopant Thengadi Ji</a></li>
+                                        <li><a target='_blank' href="https://www.facebook.com/swadeshishodh/">Swadeshi Shodh Sansthan</a></li>
                                     </ul>
                                 </div>
                             </div>

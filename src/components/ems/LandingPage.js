@@ -15,6 +15,7 @@ import Footer from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
 import CitySelect from './CitySelect/CitySelect';
 import ContactUs from './ContactUs/ContactUs';
+import MapChart from './Map/Map';
 
 const priceBlog = [
   { price: "10" },
@@ -43,10 +44,11 @@ const LandingPage = () => {
   return (
     <div >
       <Header logoStyle={IMAGES.logo2} />
-      < Carousel />
+      <Carousel />
       <CitySelect />
       <Aboutus />
-      <Services />
+      {/* <Services /> */}
+      <UpcomingEvent />
       <Gallery />
       <UpcomingEvent />
       <ContactUs />

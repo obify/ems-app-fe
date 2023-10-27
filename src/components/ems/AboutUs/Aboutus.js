@@ -69,18 +69,26 @@ const Aboutus = () => {
                                     <div className="col-xl-5">
                                         <div className="counter-text-wrapper">
                                             <div className="counter-text m-b30">
-                                                <h4>Donation Raised</h4>
+                                                <h4>Total Mela</h4>
                                                 <div className="counter-num text-primary">
-                                                    $<span className="counter">
-                                                        <CountUp end="55000" separator=',' />
+                                                    <span className="counter">
+                                                        <CountUp end="550" separator=',' />
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div className="counter-text m-b30">
+                                                <h4>Total Visitor</h4>
+                                                <div className="counter-num text-primary">
+                                                    <span className="counter">
+                                                        <CountUp end="250" separator=',' />
                                                     </span>
                                                 </div>
                                             </div>
                                             <div className="counter-text">
-                                                <h4>Donation Goal</h4>
+                                                <h4>Total Exhibitor</h4>
                                                 <div className="counter-num text-primary">
-                                                    $<span className="counter">
-                                                        <CountUp end="25000" separator=',' />
+                                                    <span className="counter">
+                                                        <CountUp end="300" separator=',' />
                                                     </span>
                                                 </div>
                                             </div>
