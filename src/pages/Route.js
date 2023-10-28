@@ -33,6 +33,8 @@ import BlogList from "./BlogList";
 import BlogDetails from "./BlogDetails";
 import ContactUs from "./ContactUs";
 import LandingPage from "../components/ems/LandingPage";
+import Homee from "../components/ems/Home/Carousel"
+import MapChart from "../components/ems/Map/Map";
 
 function Index() {
   return (
@@ -44,16 +46,18 @@ function Index() {
         <Route path="/coming-soon" exact element={<ComingSoon />} />
         <Route path="/index-2" exact element={<Home2 />} />
 
-		{/*Start our routes start*/}
+        {/*Start our routes start*/}
 
-		 <Route path="/landingpage" exact element={<LandingPage />} />
+        <Route path="/landingpage" exact element={<LandingPage />} />
+        <Route path="/map" exact element={<MapChart />} />
+        <Route path="/homee" exact element={<Homee />} />
 
-		 	{/*Start our routes end*/}
+        {/*Start our routes end*/}
         <Route path="/index-3" exact element={<Home3 />} />
 
-		
+
         <Route element={<MainLayout />}>
-         
+
           <Route path="/" exact element={<Home />} />
           <Route path="/about-us" exact element={<AboutUs />} />
           <Route path="/volunteer" exact element={<Volunteer />} />
@@ -112,7 +116,7 @@ function MainLayout() {
   return (
     <div className="page-wraper">
       {/*<Header />*/}
-	  <Header />
+      <Header />
       <Outlet />
       <Footer />
     </div>
