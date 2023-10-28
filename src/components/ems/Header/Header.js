@@ -8,7 +8,7 @@ import DonateModal from '../../../components/Modal/DonateModal';
 
 //import logo from './../assets/images/logo-2.png';
 
-const Header = ({ onShowDonate, changeStyle, changeLogo }) => {
+const Header = ({scrollToRef, onShowDonate, changeStyle, changeLogo }) => {
     //form submit
     const nav = useNavigate();
     const formSubmit = (e) => {
@@ -114,7 +114,7 @@ const Header = ({ onShowDonate, changeStyle, changeLogo }) => {
                                         //onClick={()=>onShowDonate(true)}
                                         onClick={() => { modalRef.current.handleModalOpen(); }}
                                     >
-                                        <span>Donate Now</span>
+                                        <span>Register Your Mela</span>
                                         <i className="flaticon-heart text-secondary ms-3"></i>
                                     </Link>
                                     <Link to={"#"} className="menu-btn"
@@ -149,7 +149,7 @@ const Header = ({ onShowDonate, changeStyle, changeLogo }) => {
                                         let menuClass = data.classChange;
                                         if (menuClass !== "sub-menu-down") {
                                             return (
-                                                <li className={menuClass} key={index} ><Link to={data.to}>{data.title}</Link></li>
+                                                <li className={menuClass} key={index} ><a onClick={() => scrollToRef(`${data.title}`)} href="#">{data.title}</a></li>
                                             )
                                         } else {
                                             return (

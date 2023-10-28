@@ -9,13 +9,14 @@ import { useNavigate } from 'react-router-dom';
 import { ThemeContext } from "../../context/ThemeContext";
 import Carousel from './Home/Carousel';
 import Aboutus from './AboutUs/Aboutus';
-import Services from './Services/Services';
+//import Services from './Services/Services';
 import UpcomingEvent from './UpcomingEvents/UpcomingEvent';
 import Footer from './Footer/Footer';
 import Gallery from './Gallery/Gallery';
 import CitySelect from './CitySelect/CitySelect';
 import ContactUs from './ContactUs/ContactUs';
 import MapChart from './Map/Map';
+import EventShow from './EventShow/EventShow';
 
 const priceBlog = [
   { price: "10" },
@@ -24,6 +25,19 @@ const priceBlog = [
   { price: "100" },
 ];
 const LandingPage = () => {
+
+
+
+
+  const scrollToRef = (id) => {
+    const element = document.getElementById(id);
+    console.log(id);
+    if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        console.error(`Element with id "${id}" not found.`);
+    }
+};
 
   const { changeBackground, changePrimaryColor } = useContext(ThemeContext);
   useEffect(() => {
@@ -43,17 +57,16 @@ const LandingPage = () => {
 
   return (
     <div >
-      <Header logoStyle={IMAGES.logo2} />
+      <Header scrollToRef={scrollToRef} logoStyle={IMAGES.logo2} />
       <Carousel />
       <CitySelect />
       <Aboutus />
       {/* <Services /> */}
+      <EventShow  />
+      <Gallery   />
       <UpcomingEvent />
-      <Gallery />
-      <UpcomingEvent />
-      <ContactUs />
+      <ContactUs  />
       <Footer />
-
     </div>
   )
 }

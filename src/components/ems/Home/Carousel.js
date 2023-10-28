@@ -40,7 +40,7 @@ const Carousel = ({onShowDonate}) => {
 	const modalRef = useRef(null);
     return (
         <>
-         <div className="page-content bg-white">	
+         <div id="Home" className="page-content bg-white">	
                 <div className="main-bnr-one">
                   {/*  <Mainslider2 />*/}
                  
@@ -92,7 +92,7 @@ const Carousel = ({onShowDonate}) => {
 														<span>Donate</span>
 														<i className="flaticon-heart text-secondary ms-3"></i>
 													</Link>
-													<Link to={"/about-us"} className="btn btn-secondary btnhover2">Learn More <i className="flaticon-right-arrows ms-3"></i></Link>
+													<Link to={"/map"} className="btn btn-secondary btnhover2">Attend Mela <i className="flaticon-right-arrows ms-3"></i></Link>
 												</div>
 											</div>
 										</div>

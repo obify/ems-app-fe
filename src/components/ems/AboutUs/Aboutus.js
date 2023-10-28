@@ -9,7 +9,7 @@ import slide2 from '../../../assets/images/side-images/pic2.png';
 
 const Aboutus = () => {
     return (
-        <div>
+        <div id="Our Vision" >
 
             <section className="content-inner section-wrapper4">
                 <div className="container">
