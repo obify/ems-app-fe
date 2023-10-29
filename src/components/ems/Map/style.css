@@ -1,0 +1,16 @@
+svg{
+    display: inline-block;
+    position: relative !important;   
+  
+}
+
+@media (max-width: 768px) {
+    svg {
+     
+     
+     
+      top: 0px !important;
+      left: 0px!important; 
+    }
+  }
+  

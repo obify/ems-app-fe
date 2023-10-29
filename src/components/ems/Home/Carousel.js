@@ -130,10 +130,10 @@ const Carousel = ({onShowDonate}) => {
 						<li><a href="https://twitter.com/" rel="noreferrer">Twitter</a></li>
 						<li><a href="https://www.instagram.com/" rel="noreferrer">Instagram</a></li>
 					</ul>
-					<div className="btn-wrapper">
+					{/* <div className="btn-wrapper">
 						<div className="main-btn main-btn-prev" ref={navigationPrevRef}><i className="fa fa-angle-left"></i></div>
 						<div className="main-btn main-btn-next" ref={navigationNextRef}><i className="fa fa-angle-right"></i></div>
-					</div>
+					</div> */}
 				</div>
 			</Swiper>
             </div>

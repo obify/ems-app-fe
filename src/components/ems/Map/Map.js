@@ -1,11 +1,17 @@
 import React from "react";
 import DatamapsIndia from "react-datamaps-india";
+import './style.css'
+
+
 
 const MapChart = () => {
   return (
-    <div style={{ position: "relative" }}>
+
+    
+    <div style={{ position:"relative" }}>
       <DatamapsIndia
-        style={{ postion: "relative", left: "25%" }}
+      className="custom-svg"
+        style={{ postion:"relative", left: "25%" }}
         regionData={{
           "Andaman & Nicobar Island": {
             value: 150
@@ -120,7 +126,7 @@ const MapChart = () => {
           );
         }}
         mapLayout={{
-          title: "OCs Deployed per State in India",
+          title: "Mela in Different State in India",
           legendTitle: "Number of OCs",
           startColor: "#b3d1ff",
           endColor: "#005ce6",
@@ -134,6 +140,8 @@ const MapChart = () => {
         }}
       />
     </div>
+   
+
   );
 };
 

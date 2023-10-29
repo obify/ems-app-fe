@@ -89,7 +89,7 @@ const Footer = () => {
                 
                 <div className="footer-bottom text-center">
                     <div className="container">
-                        <span className="copyright-text">Akcel Crowdfunding & Charity Website - © 2023 by <a href="https://dexignzone.com/"  rel="noreferrer" target="_blank">DexignZone</a></span>
+                        <span className="copyright-text">Swadeshi Mela Website - © 2023 Designed by <a href="https://obifyconsulting.com/"  rel="noreferrer" target="_blank">Obify Consulting</a></span>
                     </div>
                 </div>
             </footer>

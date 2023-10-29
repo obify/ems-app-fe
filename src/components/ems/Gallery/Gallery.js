@@ -88,9 +88,8 @@ const Gallry = () => {
     const handleMoveNext = () => setIndex(nextIndex);
 
     return (
-        <div id="Gallery">
-            <div className=" mt-3 section-head text-center">
-
+        <div  className="" id="Gallery">
+            <div className="mt-5 section-head text-center">
                 <h2>Mela Gallery</h2>
             </div>
             <Gallery

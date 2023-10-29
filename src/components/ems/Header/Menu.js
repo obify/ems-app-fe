@@ -1,7 +1,7 @@
 export const MenuListArray2 = [
     {
         title:"Home",
-        to: './homee',
+        to: '#',
         // classChange:"sub-menu-down",
         // content :  [
         //     {
@@ -20,7 +20,7 @@ export const MenuListArray2 = [
     },
     {
         title:"Our Vision",
-        to:'',
+        to:'#',
         // classChange:"sub-menu-down",
         // content : [
         //     {
@@ -86,19 +86,19 @@ export const MenuListArray2 = [
     },
     {
         title:"Events",
-        to:''
+        to:'#'
     },
     {
         title:"Melas",
-        to:'',
+        to:'#',
     },
     {
         title:"Gallery",
-        to:'',
+        to:'#',
     },
     {   
         title: 'Contact',	
-        to: '',
+        to: '#',
     },
 
 ];
