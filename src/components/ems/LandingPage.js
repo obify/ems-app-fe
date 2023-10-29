@@ -17,6 +17,7 @@ import CitySelect from './CitySelect/CitySelect';
 import ContactUs from './ContactUs/ContactUs';
 import MapChart from './Map/Map';
 import EventShow from './EventShow/EventShow';
+import CorrectMaps from './Map/CorrectMaps';
 
 const priceBlog = [
   { price: "10" },
@@ -29,15 +30,15 @@ const LandingPage = () => {
 
 
 
-  const scrollToRef = (id) => {
-    const element = document.getElementById(id);
-    console.log(id);
-    if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        console.error(`Element with id "${id}" not found.`);
-    }
-};
+//   const scrollToRef = (id) => {
+//     const element = document.getElementById(id);
+//     console.log(id);
+//     if (element) {
+//         element.scrollIntoView({ behavior: 'smooth' });
+//     } else {
+//         console.error(`Element with id "${id}" not found.`);
+//     }
+// };
 
   const { changeBackground, changePrimaryColor } = useContext(ThemeContext);
   useEffect(() => {
@@ -57,16 +58,18 @@ const LandingPage = () => {
 
   return (
     <div >
-      <Header scrollToRef={scrollToRef} logoStyle={IMAGES.logo2} />
+      {/* <Header scrollToRef={scrollToRef} logoStyle={IMAGES.logo2} /> */}
       <Carousel />
       <CitySelect />
       <Aboutus />
+      {/* <MapChart /> */}
+      {/* <CorrectMaps/> */}
       {/* <Services /> */}
       <EventShow  />
       <Gallery   />
       <UpcomingEvent />
       <ContactUs  />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -16,7 +16,7 @@ const UpcomingEvent = () => {
                         </div>
                         <TrendingSlider />
                         <div className="text-center m-t30 m-b30 wow fadeInUp" data-wow-delay="1.0s">
-                            <Link to={"#"} className="btn btn-primary" >View All Melas</Link>
+                            <Link to={"/map"} className="btn btn-primary" >View All Melas</Link>
                         </div>
                     </div>
                 </div>

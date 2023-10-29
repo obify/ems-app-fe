@@ -68,11 +68,11 @@ const TrendingSlider = () => {
                                 <Link to={"/fundraiser-detail"}><img src={d.image} alt="" /></Link>
                             </div>
                             <div className="dz-info">
-                                <ul className="dz-category">
+                                {/* <ul className="dz-category">
                                     <li><Link to={"#"}>{d.subtitle}</Link></li>
-                                </ul>
+                                </ul> */}
                                 <h4 className="dz-title"><Link to={"/fundraiser-detail"}>{d.title} </Link></h4>  
-                                <ul className="dz-meta">
+                                {/* <ul className="dz-meta">
                                     <li className="author-wrappper author-wrappper-sm mt-0">
                                         <div className="author-media">
                                             <img src={d.image2} alt="" /> 
@@ -83,23 +83,23 @@ const TrendingSlider = () => {
                                         <i className="fa-solid fa-calendar"></i>
                                         {" "}<span>45 Days left</span>
                                     </li>
-                                </ul>
+                                </ul> */}
                                 <p>Alienum phaedrum torquatos nec eu, vis detraxit periculis ex..</p> 
-                                <div className="progress-bx style-2">
+                                {/* <div className="progress-bx style-2">
                                     <div className="progress">
                                         <div className="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style={{width:d.progres}}>
                                             <span className="progress-value">{d.progres}</span>
                                         </div>
                                     </div>
-                                    <ul className="progress-tag">
+                                     <ul className="progress-tag">
                                         <li className="raised">
                                             <p>Raised: <span className="text-primary">$ 5,345</span></p>
                                         </li>
                                         <li className="goal">
                                             <p>Goal: <span className="text-primary">$70,000</span></p>
                                         </li>
-                                    </ul> 
-                                </div>
+                                    </ul>  
+                                </div> */}
                             </div>
                         </div>				
 					</SwiperSlide>
